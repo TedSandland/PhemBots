@@ -45,7 +45,8 @@ Both send a single target cell to the robots, which `Recieve_target_cell_used_fo
 Each system and condition was run for 10 trials of 180 seconds on the physical robots (70 trials in total). The conditions were no mess, a fixed-schedule mess, and a random mess. The boustrophedon baseline was tested only under the random condition.
 
 - PhemBots matched the auction baseline on coverage speed and mess response time.
-- It was significantly better on boundary adherence, inter-robot spacing, collision avoidance and reward efficiency (Mann-Whitney U, p < 0.05 for all comparisons except near collisions against the boustrophedon baseline under random mess).
+- Compared with the auction baseline, PhemBots was significantly better on boundary adherence, inter-robot spacing, collision avoidance and reward efficiency in every condition (Mann-Whitney U, p < 0.05).
+- Compared with the boustrophedon sweep (random mess only), PhemBots had fewer boundary incursions and higher reward efficiency. The sweep had wider robot spacing, and its lower near-collision count was not statistically significant, since its robots stay in separate strips by design.
 - Reward efficiency per millimetre travelled was about 131-135 for PhemBots, compared with about 118-122 for the auction and about 103 for boustrophedon.
 - Without mess, the mean near-collision count was about 4 for PhemBots and about 45 for the auction baseline.
 - The number of responding robots scaled with event severity without any explicit rule. Neither baseline can do this.
